@@ -19,7 +19,7 @@ export function getSanityImage({ node, width = 960 }: Props) {
 	try {
 		image =
 			node.ref &&
-			builder.image(node.ref).width(width).fit("crop").auto("format");
+			builder.image(node.ref).auto('format');
 	} catch (error) {
 		console.error(error);
 	}
